@@ -1,13 +1,165 @@
+
+
+
 <!DOCTYPE html>
 
-<h1>Hello world</h1>
+<body></body>
 
-<style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
-h1{
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+<script>
 
-</style>
+
+	var svg9 = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 596 178" style="enable-background:new 0 0 496 178;" xml:space="preserve"> <style type="text/css"> .st0{fill:none;stroke:#000000;stroke-miterlimit:10;} .st91{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;} .st2{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;} .st3{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;} </style> <g id="Layer_2"> <g id="XMLID_36_15_"> <line id="XMLID_36_2_" class="st0" x1="46.2" y1="166.7" x2="0" y2="166.7"/> <rect id="XMLID_36_4_" x="30.6" y="166.7" width="15.6" height="5.4"/> <rect id="XMLID_36_5_" x="40.7" y="172.1" width="325.3" height="5.9"/> <rect id="XMLID_36_6_" x="135.6" y="0.5" class="st0" width="82.2" height="171.6"/> <rect id="XMLID_36_3_" x="55.2" y="112.1" class="st0" width="80.4" height="60"/> <rect id="XMLID_36_7_" x="217.8" y="113.9" class="st0" width="137.1" height="58.2"/> <rect id="XMLID_36_8_" x="132.5" y="11" class="st91" width="88.5" height="101.1"/> <g id="XMLID_36_10_"> <line id="XMLID_36_9_" class="st2" x1="138.2" y1="172.1" x2="138.2" y2="112.1"/> <line id="XMLID_36_11_" class="st2" x1="157.5" y1="172.1" x2="157.5" y2="112.1"/> <line id="XMLID_36_12_" class="st2" x1="176.7" y1="172.1" x2="176.7" y2="112.1"/> <line id="XMLID_36_13_" class="st2" x1="196" y1="172.1" x2="196" y2="112.1"/> <line id="XMLID_36_14_" class="st2" x1="215.2" y1="172.1" x2="215.2" y2="112.1"/> </g> </g> </g> </svg>';
+	$("body").append(svg9)
+
+	var animation_9 = anime.timeline({ easing: 'linear', duration: 1000, autoplay: true })
+		.add({ targets: ["#XMLID_36_4_","#XMLID_36_5_"] , translateY: [-600, 0] })
+		.add({ targets: "#XMLID_36_2_", strokeDashoffset: [anime.setDashoffset, 0] })
+		.add({ targets: "#XMLID_36_6_", y: [172.1, 0.5], height: [0, 171.6] })
+		.add({ targets: "#XMLID_36_3_", y: [172.1, 112.1], height: [0, 60] })
+		.add({ targets: "#XMLID_36_7_", y: [172.1, 113.9], height: [0, 58.2] })
+		.add({ targets: "#XMLID_36_8_", strokeDashoffset: [anime.setDashoffset, 0], opacity: [0, 1] })
+		.add({ targets: ["#XMLID_36_9_", "#XMLID_36_11_", "#XMLID_36_12_", "#XMLID_36_13_", "#XMLID_36_14_"], strokeDashoffset: [anime.setDashoffset, 0] })
+
+
+
+    var svg8 = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 596 178" style="enable-background:new 0 0 496 178;" xml:space="preserve"> <style type="text/css"> .st0 { fill: none; stroke: #000000; stroke-miterlimit: 10; } .st91 { fill: #FFFFFF; stroke: #000000; stroke-miterlimit: 10; } .st2 { fill: none; stroke: #000000; stroke-width: 4; stroke-miterlimit: 10; } .st3 { fill: none; stroke: #000000; stroke-width: 2; stroke-miterlimit: 10; } </style> <g id="Layer_5"> <g id="XMLID_17_"> <line id="XMLID_3558_" class="st3" x1="0.1" y1="175" x2="393.8" y2="175" /> <rect id="XMLID_3554_" x="94.7" y="110.4" class="st0" width="264.3" height="63.6" /> <rect id="XMLID_3557_" x="38.7" y="47.9" class="st0" width="56" height="126.1" /> <line id="XMLID_3556_" class="st2" x1="34.7" y1="110.4" x2="348" y2="110.4" /> <line id="XMLID_3555_" class="st2" x1="34.7" y1="46.2" x2="358" y2="46.2" /> <rect id="XMLID_3553_" x="94.7" y="71.4" class="st0" width="300.8" height="39" /> <rect id="XMLID_3552_" x="284.7" y="37.4" width="63.3" height="6.5" /> <rect id="XMLID_3551_" x="84.5" y="47.9" width="5.5" height="126.1" /> <rect id="XMLID_3550_" x="286.7" y="47.9" class="st91" width="58.3" height="126.1" /> <g id="XMLID_18_"> <line id="XMLID_3549_" class="st0" x1="163.3" y1="174" x2="163.3" y2="47.9" /> <line id="XMLID_3548_" class="st0" x1="158.9" y1="174" x2="158.9" y2="47.9" /> <line id="XMLID_3547_" class="st0" x1="154.5" y1="174" x2="154.5" y2="47.9" /> <line id="XMLID_3546_" class="st0" x1="172.1" y1="174" x2="172.1" y2="47.9" /> <line id="XMLID_3545_" class="st0" x1="180.9" y1="174" x2="180.9" y2="47.9" /> <line id="XMLID_3544_" class="st0" x1="189.7" y1="174" x2="189.7" y2="47.9" /> <line id="XMLID_3543_" class="st0" x1="207.4" y1="174" x2="207.4" y2="47.9" /> <line id="XMLID_3542_" class="st0" x1="198.6" y1="174" x2="198.6" y2="47.9" /> <line id="XMLID_3541_" class="st0" x1="167.7" y1="174" x2="167.7" y2="47.9" /> <line id="XMLID_3540_" class="st0" x1="176.5" y1="174" x2="176.5" y2="47.9" /> <line id="XMLID_3539_" class="st0" x1="185.3" y1="174" x2="185.3" y2="47.9" /> <line id="XMLID_3538_" class="st0" x1="194.1" y1="174" x2="194.1" y2="47.9" /> <line id="XMLID_3537_" class="st0" x1="211.8" y1="174" x2="211.8" y2="47.9" /> <line id="XMLID_3536_" class="st0" x1="203" y1="174" x2="203" y2="47.9" /> <line id="XMLID_3535_" class="st0" x1="216.2" y1="174" x2="216.2" y2="47.9" /> <line id="XMLID_3534_" class="st0" x1="225" y1="174" x2="225" y2="47.9" /> <line id="XMLID_3533_" class="st0" x1="233.8" y1="174" x2="233.8" y2="47.9" /> <line id="XMLID_3532_" class="st0" x1="242.6" y1="174" x2="242.6" y2="47.9" /> <line id="XMLID_3531_" class="st0" x1="260.3" y1="174" x2="260.3" y2="47.9" /> <line id="XMLID_3530_" class="st0" x1="251.5" y1="174" x2="251.5" y2="47.9" /> <line id="XMLID_3529_" class="st0" x1="220.6" y1="174" x2="220.6" y2="47.9" /> <line id="XMLID_3528_" class="st0" x1="229.4" y1="174" x2="229.4" y2="47.9" /> <line id="XMLID_3527_" class="st0" x1="238.2" y1="174" x2="238.2" y2="47.9" /> <line id="XMLID_3526_" class="st0" x1="247" y1="174" x2="247" y2="47.9" /> <line id="XMLID_3525_" class="st0" x1="264.7" y1="174" x2="264.7" y2="47.9" /> <line id="XMLID_3524_" class="st0" x1="255.9" y1="174" x2="255.9" y2="47.9" /> <line id="XMLID_3523_" class="st0" x1="277.9" y1="174" x2="277.9" y2="47.9" /> <line id="XMLID_3522_" class="st0" x1="269.1" y1="174" x2="269.1" y2="47.9" /> <line id="XMLID_3521_" class="st0" x1="282.3" y1="174" x2="282.3" y2="47.9" /> <line id="XMLID_3520_" class="st0" x1="286.7" y1="174" x2="286.7" y2="47.9" /> <line id="XMLID_3519_" class="st0" x1="273.5" y1="174" x2="273.5" y2="47.9" /> </g> </g> </g> </svg> ';
+    $("body").append(svg8)
+
+    var animation_8 = anime.timeline({ easing: 'linear', duration: 700, autoplay: true })
+        .add({ targets: "#XMLID_3558_", translateX: [-300, 0] })
+        .add({ targets: "#XMLID_3554_", y: [174, 110.4], height: [0, 63.6] })
+        .add({ targets: "#XMLID_3557_", y: [174.3, 47.9], height: [0, 126.4] })
+        .add({ targets: "#XMLID_3550_", y: [174.3, 47.9], height: [0, 126.4] })
+        .add({ targets: "#XMLID_3556_", translateX: [-500, 0] })
+        .add({ targets: "#XMLID_3555_", translateX: [800, 0] })
+        .add({ targets: "#XMLID_3553_", translateX: [-600, 0] })
+        .add({ targets: "#XMLID_3552_", translateY: [-600, 0] })
+        .add({ targets: "#XMLID_3551_", y: [174.3, 47.9], height: [0, 126.1] })
+        .add({ targets: "#XMLID_18_", translateY: [-500, 0] })
+
+
+
+	var svg7 = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 564 564" style="enable-background:new 0 0 564 564;" xml:space="preserve"> <style type="text/css"> .st0{fill:none;stroke:#000000;stroke-miterlimit:10;} .st1{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;} .st2{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;} .st3{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;} .st4{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;} .st5{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;} .st6{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;} </style> <g id="Layer_2"> <g id="XMLID_43_"> <line id="XMLID_76_" class="st0" x1="554.3" y1="364.8" x2="9.7" y2="364.8"/> <rect id="XMLID_75_" x="337.7" y="294.3" class="st0" width="107.3" height="70.4"/> <rect id="XMLID_74_" x="284.9" y="281.8" class="st0" width="52.8" height="82.9"/> <rect id="XMLID_73_" x="104.9" y="283.3" class="st0" width="180" height="81.4"/> <rect id="XMLID_59_" x="423.5" y="283.3" width="3.6" height="8.5"/> <rect id="XMLID_58_" x="397.5" y="283.3" width="3.6" height="8.5"/> <rect id="XMLID_57_" x="369.2" y="283.3" width="3.6" height="8.5"/> <line id="XMLID_64_" class="st1" x1="337.7" y1="292.4" x2="489.5" y2="292.4"/> <line id="XMLID_63_" class="st1" x1="69.2" y1="286.1" x2="284.9" y2="286.1"/> <line id="XMLID_62_" class="st2" x1="447.3" y1="281.8" x2="104.9" y2="281.8"/> <line id="XMLID_61_" class="st3" x1="151.4" y1="271.6" x2="299.7" y2="271.6"/> <polygon id="XMLID_60_" points="285.9,274.6 285.9,272.3 160.2,272.3 160.2,274.6 113.2,274.6 113.2,280.3 413.6,280.3 413.6,274.6 		"/> <polygon id="XMLID_56_" class="st4" points="299.7,238.6 327.2,246.3 337.7,274.8 287.7,274.8 		"/> <path id="XMLID_55_" d="M125.1,258.8h2.3c-0.7-1.3-2.1-2.2-3.6-2.1c-1.4,0.1-2.6,0.9-3.3,2.1h2.4c-0.8,0.4-1.4,1.3-1.4,2.3v13.4 h4.8v-13.4h0C126.5,260.1,125.9,259.2,125.1,258.8z"/> <polygon id="XMLID_54_" points="208.3,268.4 194,263 193.2,264.8 194.1,265.1 194.1,270.6 195.1,270.6 195.1,265.5 199.8,267.2 199.8,270.6 200.8,270.6 200.8,267.6 207.6,270.2 		"/> <polygon id="XMLID_53_" points="231.2,268.4 216.8,263 216.1,264.8 217,265.1 217,270.6 218,270.6 218,265.5 222.7,267.2 222.7,270.6 223.7,270.6 223.7,267.6 230.5,270.2 		"/> <polygon id="XMLID_52_" points="254.1,268.4 239.7,263 239,264.8 239.8,265.1 239.8,270.6 240.8,270.6 240.8,265.5 245.5,267.2 245.5,270.6 246.5,270.6 246.5,267.6 253.4,270.2 		"/> <rect id="XMLID_67_" x="99.9" y="299.6" width="5" height="36.8"/> <rect id="XMLID_66_" x="444.9" y="299.9" width="2.4" height="36.2"/> <line id="XMLID_68_" class="st0" x1="82.2" y1="330.6" x2="99.9" y2="299.6"/> <line id="XMLID_65_" class="st0" x1="465.5" y1="332.3" x2="447.3" y2="299.9"/> <rect id="XMLID_72_" x="192.2" y="311.3" width="6.5" height="20"/> <rect id="XMLID_71_" x="201.7" y="311.3" width="6.5" height="20"/> <rect id="XMLID_70_" x="252.9" y="311.3" width="3.5" height="20"/> <rect id="XMLID_69_" x="431.2" y="311.3" width="3.5" height="20"/> <g id="XMLID_44_"> <polyline id="XMLID_50_" class="st0" points="74.3,364.8 284.9,346.8 502,346.8		"/> <line id="XMLID_51_" class="st0" x1="502" y1="346.8" x2="502" y2="364.8"/> <line id="XMLID_49_" class="st0" x1="474.7" y1="346.8" x2="474.7" y2="364.8"/> <line id="XMLID_48_" class="st0" x1="413.6" y1="346.8" x2="413.6" y2="364.8"/> <line id="XMLID_47_" class="st0" x1="383.7" y1="346.8" x2="383.7" y2="364.8"/> <line id="XMLID_46_" class="st0" x1="356.5" y1="346.8" x2="356.5" y2="364.8"/> <line id="XMLID_45_" class="st0" x1="326.5" y1="346.8" x2="326.5" y2="364.8"/> </g> </g> </g> </svg>';
+	$("body").append(svg7)
+
+	var animation_7 = anime.timeline({ easing: 'linear', duration: 700, autoplay: true })
+		.add({ targets: "#XMLID_76_", translateX: [-300, 0] })
+		.add({ targets: "#XMLID_73_", y: [364.7, 283.3], height: [0, 81.4] })
+		.add({ targets: "#XMLID_74_", y: [364.7, 281.8], height: [0, 82.9]})
+		.add({ targets: "#XMLID_75_", y: [364.7, 294.3], height: [0, 70.4] })
+		.add({ targets: "#XMLID_63_", translateX: [-600, 0] })
+		.add({ targets: ["#XMLID_64_", "#XMLID_57_", "#XMLID_58_", "#XMLID_59_", "#XMLID_62_"], translateX: [600, 0] })
+		.add({ targets: ["#XMLID_60_", "#XMLID_61_"], translateY: [-600, 0] })
+		.add({ targets: "#XMLID_56_", strokeDashoffset: [anime.setDashoffset, 0] })
+		.add({ targets: "#XMLID_55_", opacity: [0, 1] })
+		.add({ targets: ["#XMLID_54_", "#XMLID_53_", "#XMLID_52_"], opacity: [0, 1] })
+		.add({ targets: ["#XMLID_67_", "#XMLID_68_"], translateX: [-600, 0] })
+		.add({ targets: ["#XMLID_66_", "#XMLID_65_"], translateX: [600, 0] })
+		.add({ targets: ["#XMLID_72_", "#XMLID_71_", "#XMLID_70_", "#XMLID_69_"], opacity: [0, 1] })
+		.add({ targets: "#XMLID_50_", strokeDashoffset: [anime.setDashoffset, 0] })
+		.add({ targets: ['#XMLID_51_', '#XMLID_49_', '#XMLID_48_', '#XMLID_47_', '#XMLID_46_', '#XMLID_45_'], strokeDashoffset: [anime.setDashoffset, 0]})
+
+
+
+	var svg6 = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 664 700" style="enable-background:new 0 0 564 564;" xml:space="preserve"> <style type="text/css"> .st0 { fill: none; stroke: #000000; stroke-miterlimit: 10; } .st1 { fill: none; stroke: #000000; stroke-width: 2; stroke-miterlimit: 10; } .st2 { fill: none; stroke: #000000; stroke-width: 4; stroke-miterlimit: 10; } .st3 { fill: none; stroke: #000000; stroke-width: 3; stroke-miterlimit: 10; } .st4 { fill: none; stroke: #000000; stroke-width: 0.5; stroke-miterlimit: 10; } .st5 { fill: none; stroke: #000000; stroke-width: 0.75; stroke-miterlimit: 10; } .st6 { fill: none; stroke: #000000; stroke-width: 6; stroke-miterlimit: 10; } </style> <g id="Layer_4"> <g id="XMLID_34_"> <polyline id="XMLID_3316_" class="st5" points="0,340.6 111,340.6 140,357.6 239.5,357.6 285.5,364.6 564,364.6 		" /> <rect id="XMLID_3315_" x="32.7" y="238.6" class="st5" width="78.3" height="102" /> <line id="XMLID_3320_" class="st3" x1="358" y1="364.6" x2="358" y2="359.5" /> <line id="XMLID_3322_" class="st3" x1="375.2" y1="364.6" x2="375.2" y2="359.5" /> <line id="XMLID_3323_" class="st3" x1="392.3" y1="364.6" x2="392.3" y2="359.5" /> <line id="XMLID_3324_" class="st3" x1="407.5" y1="364.6" x2="407.5" y2="359.5" /> <line id="XMLID_3325_" class="st3" x1="423" y1="364.6" x2="423" y2="359.5" /> <line id="XMLID_3326_" class="st3" x1="439.3" y1="364.6" x2="439.3" y2="359.5" /> <line id="XMLID_3319_" class="st1" x1="348.1" y1="359.5" x2="451" y2="359.5" /> <rect id="XMLID_3317_" x="349.5" y="297.8" class="st4" width="100.3" height="61.2" /> <line id="XMLID_3321_" class="st6" x1="72.8" y1="295.3" x2="450.8" y2="295.3" /> <line id="XMLID_3327_" class="st1" x1="192.7" y1="357.6" x2="253.7" y2="296.6" /> <line id="XMLID_3328_" class="st1" x1="192.7" y1="357.6" x2="131" y2="295.9" /> <rect id="XMLID_3318_" x="349.5" y="297.8" class="st4" width="55.3" height="61.2" /> <line id="XMLID_3330_" class="st5" x1="88.3" y1="331.1" x2="88.3" y2="340.6" /> <line id="XMLID_3331_" class="st5" x1="282" y1="355.8" x2="282" y2="364.1" /> <line id="XMLID_3332_" class="st5" x1="231.3" y1="349.3" x2="231.3" y2="357.6" /> <line id="XMLID_3333_" class="st5" x1="141.5" y1="349.3" x2="141.5" y2="357.6" /> <polyline id="XMLID_3329_" class="st5" points="282,356.1 231.3,349.3 141.5,349.3 113.3,331.1 88.3,331.1 		" /> </g> </g> </svg>';
+	$("body").append(svg6)
+
+	var animation_6 = anime.timeline({ easing: 'linear', duration: 700, autoplay: true })
+		.add({ targets: "#XMLID_3316_", strokeDashoffset: [anime.setDashoffset, 0] })
+		.add({ targets: "#XMLID_3315_", y: [340.6, 238.6], height: [0, 102] })
+		.add({ targets: ['#XMLID_3320_', '#XMLID_3322_', , '#XMLID_3323_', , '#XMLID_3324_', , '#XMLID_3325_', , '#XMLID_3326_'], strokeDashoffset: [anime.setDashoffset, 0], })
+		.add({ targets: "#XMLID_3319_", translateX: [300, 0] })
+		.add({ targets: "#XMLID_3317_", y: [359, 297.8], height: [0, 61.2] })
+		.add({ targets: "#XMLID_3321_", translateX: [-500, 0] })
+		.add({ targets: ["#XMLID_3327_", "#XMLID_3328_"], strokeDashoffset: [anime.setDashoffset, 0] })
+		.add({ targets: "#XMLID_3318_", strokeDashoffset: [anime.setDashoffset, 0] })
+		.add({ targets: "#XMLID_3329_", strokeDashoffset: [anime.setDashoffset, 0] })
+		.add({ targets: ["#XMLID_3330_", "#XMLID_3331_", , "#XMLID_3332_", , "#XMLID_3333_"], opacity: [0, 1] })
+
+
+
+
+	var svg5 = ' <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 300" style="enable-background:new 0 0 408 206;" xml:space="preserve"> <style type="text/css"> .st0 { fill: none; stroke: #000000; stroke-width: 0.5; stroke-miterlimit: 10; } .st1 { fill: none; stroke: #000000; stroke-width: 2; stroke-miterlimit: 10; } .st2 { fill: none; stroke: #000000; stroke-miterlimit: 10; } .st3 { fill: #999B9E; } .st4 { fill: none; stroke: #000000; stroke-width: 0.75; stroke-miterlimit: 10; } .st6 { font-size: 4.3782px; } #XMLID_23_ { font-family: monospace; font-weight: 900; } </style> <line id="XMLID_1_" class="st0" x1="21.7" y1="152.9" x2="375.9" y2="152.9" /> <rect id="XMLID_5_" x="148.5" y="136.6" class="st0" width="103.7" height="16.3" /> <rect id="XMLID_6_" x="101.5" y="94.1" class="st0" width="213.2" height="42.5" /> <line id="XMLID_7_" class="st1" x1="93" y1="94.1" x2="322.5" y2="94.1" /> <line id="XMLID_8_" class="st2" x1="329.2" y1="136.6" x2="148.5" y2="136.6" /> <rect id="XMLID_9_" x="154.8" y="95.1" class="st0" width="107.3" height="41.5" /> <rect id="XMLID_10_" x="210.2" y="99.4" class="st0" width="43.5" height="37.2" /> <polygon id="XMLID_31_" points="275.9,152.1 275.9,153.5 246.3,153.5 216.7,139.1 196.5,139.1 196.5,136.6 218.8,136.6 218.8,137.5 223.8,137.5 223.8,139.3 227.6,139.3 227.6,141.2 231.4,141.2 231.4,143 235.3,143 235.3,144.9 239.1,144.9 239.1,146.7 242.9,146.7 242.9,148.6 246.8,148.6 246.8,150.3 268.1,150.3 268.1,151.4 271.9,151.4 271.9,152.1 " /> <polyline id="XMLID_17_" class="st4" points="197.3,136.7 197.3,130.5 218.2,130.5 250.3,145.3 271.8,145.3 275.5,147.9 275.5,152.2 " /> <path id="XMLID_19_" d="M154.7,87.9c0.6-0.6,1.5-1.5,2.3-2.8c1.1-1.8,1.6-3.7,2-8.1c0.2-2.4,0.4-5.4,0.4-8.9h3.3v25.8h-8.1V87.9z" /> <path id="XMLID_20_" d="M162.8,87.9c0.6-0.6,1.5-1.5,2.3-2.8c1.1-1.8,1.6-3.7,2-8.1c0.2-2.4,0.4-5.4,0.4-8.9h3.3v25.8h-8.1V87.9z" /> <polygon id="XMLID_27_" points="258.5,90.6 258.5,86.6 257.6,86.6 257.6,90.6 248.5,90.6 248.5,94.2 273.6,94.2 273.6,90.6 " /> <line id="XMLID_12_" class="st2" x1="97.8" y1="98.6" x2="114.8" y2="98.6" /> <rect id="XMLID_11_" x="290.3" y="107.7" width="2.7" height="15.8" /> <rect id="XMLID_13_" x="294.3" y="107.7" width="2.7" height="15.8" /> <line id="XMLID_21_" class="st0" x1="253.7" y1="102.9" x2="210.2" y2="102.9" /> <line id="XMLID_18_" class="st0" x1="231.9" y1="136.3" x2="231.9" y2="102.9" /> <text id="XMLID_23_" transform="matrix(0.8156 0 0 1 200.3336 119.6908)" class="st5 st6">369</text> </svg> ';
+	$("body").append(svg5)
+
+	var animation_5 = anime.timeline({ easing: 'linear', duration: 700, autoplay: true })
+		.add({ targets: "#XMLID_1_", translateX: [-300, 0] })
+		.add({ targets: "#XMLID_5_", y: [152.9, 136.6], height: [0, 16.3] })
+		.add({ targets: "#XMLID_6_", translateY: [-300, 0] })
+		.add({ targets: "#XMLID_8_", translateX: [300, 0] })
+		.add({ targets: "#XMLID_7_", translateX: [-500, 0] })
+		.add({ targets: "#XMLID_9_", strokeDashoffset: [anime.setDashoffset, 0] })
+		.add({ targets: "#XMLID_10_", strokeDashoffset: [anime.setDashoffset, 0] })
+		.add({ targets: "#XMLID_31_", translateY: [-600, 0] })
+		.add({ targets: "#XMLID_17_", strokeDashoffset: [anime.setDashoffset, 0] })
+		.add({ targets: "#XMLID_20_", translateX: [-300, 0] })
+		.add({ targets: "#XMLID_19_", translateX: [300, 0] })
+		.add({ targets: "#XMLID_27_", translateX: [-300, 0] })
+		.add({ targets: "#XMLID_12_", translateX: [-300, 0] })
+		.add({ targets: ['#XMLID_11_', '#XMLID_13_'], opacity: [0, 1] })
+		.add({ targets: "#XMLID_21_", strokeDashoffset: [anime.setDashoffset, 0] })
+		.add({ targets: "#XMLID_18_", strokeDashoffset: [anime.setDashoffset, 0] })
+		.add({ targets: "#XMLID_23_", opacity: [0, 1] })
+
+
+
+
+
+	var svg_4 = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" xml:space="preserve"> <style> #XMLID_196_ rect { fill: white; stroke: black; stroke-width: .4px; } #XMLID_196_ line { stroke: black; } </style> <g xmlns="http://www.w3.org/2000/svg" id="XMLID_196_" style="transform: translateX(20px) translateY(-585px);"> <rect id="XMLID_67_" x="147.5" y="638.6" class="st31" width="74.2" height="99.1" /> <rect id="XMLID_68_" x="107.1" y="701.5" class="st31" width="102.8" height="17.6" /> <rect id="XMLID_192_" x="107.1" y="700" class="st31" width="102.8" height="1.5" /> <rect id="XMLID_193_" x="107.1" y="719" class="st31" width="102.8" height="1.5" /> <rect id="XMLID_194_" x="117.4" y="720.5" class="st31" width="92.5" height="8.6" /> <rect id="XMLID_195_" x="126.5" y="729.1" class="st31" width="78.7" height="8.6" /> <line id="XMLID_52_" class="st26" x1="77.8" y1="737.7" x2="263.4" y2="737.7" /> <rect id="XMLID_191_" x="156.4" y="643.4" class="st31" width="2.1" height="7.1" /> <rect id="XMLID_197_" x="174.4" y="654.4" class="st31" width="2.1" height="7.1" /> <rect id="XMLID_198_" x="202.2" y="644.2" class="st31" width="2.1" height="7.1" /> </g> </svg>';
+	$("body").append(svg_4)
+	var animation_4 = anime.timeline({ easing: 'linear', duration: 1000, autoplay: true })
+		.add({ targets: '#XMLID_52_', translateX: [-300, 0] })
+		.add({ targets: '#XMLID_67_', y: [737.7, 638.6], height: [0, 99.1] })
+		.add({ targets: '#XMLID_195_', y: [737.7, 729.1], height: [0, 8.6] })
+		.add({ targets: '#XMLID_194_', y: [500, 720.5] })
+		.add({ targets: ['#XMLID_193_', '#XMLID_192_'], translateX: [300, 0] })
+		.add({ targets: '#XMLID_68_', height: [0, 17.6] })
+		.add({ targets: '#XMLID_68_', width: [1, 102.8] })
+		.add({ targets: ['#XMLID_191_', '#XMLID_197_', '#XMLID_198_'], strokeDashoffset: [anime.setDashoffset, 0], opacity: [0, 1] })
+
+
+	var svg_1 = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" xml:space="preserve"> <style> #XMLID_239_ rect { fill: white; stroke: black; stroke-width: .4px; } #XMLID_239_ line { stroke: black; } </style> <g xmlns="http://www.w3.org/2000/svg" id="XMLID_239_" style="transform: translateX(-300px) translateY(-450px);"> <rect id="XMLID_232_" x="450.8" y="568.5" class="st31" width="31.6" height="29.8" /> <rect id="XMLID_234_" x="423" y="588.3" class="st31" width="33.8" height="10" /> <rect id="XMLID_235_" x="398.7" y="568.5" class="st31" width="24.3" height="29.8" /> <rect id="XMLID_231_" x="385.4" y="576.3" class="st31" width="48.8" height="22" /> <rect id="XMLID_233_" x="364.2" y="570.5" class="st31" width="139.1" height="2.3" /> <rect id="XMLID_236_" x="377.7" y="591" class="st31" width="31.2" height="7.3" /> <line id="XMLID_237_" class="st26" x1="362.1" y1="570.3" x2="505.5" y2="570.3" /> <rect id="XMLID_238_" x="362.1" y="598.3" class="st31" width="143.4" height="3" /> </g> </svg>';
+	$("body").append(svg_1)
+	var animation_1 = anime.timeline({ easing: 'linear', duration: 1000, autoplay: true })
+		.add({ targets: '#XMLID_238_', x: [100, 362.1] })
+		.add({ targets: '#XMLID_231_', y: [598, 576], height: [0, 22] })
+		.add({ targets: '#XMLID_234_', y: [598, 588], height: [0, 10] })
+		.add({ targets: '#XMLID_236_', y: [598, 591], height: [0, 7.3] })
+		.add({ targets: '#XMLID_235_', y: [598, 568], height: [0, 29.8] })
+		.add({ targets: '#XMLID_232_', y: [598, 568], height: [0, 29.8] })
+		.add({ targets: '#XMLID_233_', y: [390, 570] })
+		.add({ targets: '#XMLID_237_', y1: [390, 570.3], y2: [390, 570.3] });
+
+
+	var svg_2 = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" xml:space="preserve"> <style> #XMLID_211_ rect { fill: white; stroke: black; stroke-width: .4px; } #XMLID_211_ line { stroke: black; } </style> <g xmlns="http://www.w3.org/2000/svg" id="XMLID_211_" style="transform: translateX(-30px) translateY(-250px);"> <rect id="XMLID_199_" x="122.8" y="375.5" class="st31" width="102.3" height="24.3" /> <rect id="XMLID_200_" x="115.1" y="351" class="st31" width="117.7" height="24.5" /> <rect id="XMLID_201_" x="135.9" y="379.9" class="st31" width="11.5" height="19.8" /> <rect id="XMLID_202_" x="169.5" y="381.1" class="st31" width="34.3" height="9.8" /> <line id="XMLID_203_" class="st37" x1="79.9" y1="399.8" x2="261.4" y2="399.8" /> </g> </svg>';
+	$("body").append(svg_2);
+	var animation_2 = anime.timeline({ easing: 'linear', duration: 1000, autoplay: true })
+		.add({ targets: '#XMLID_203_', translateX: [-300, 0] })
+		.add({ targets: '#XMLID_199_', y: [399, 375], height: [0, 24.3] })
+		.add({ targets: '#XMLID_200_', y: [200, 351] })
+		.add({ targets: '#XMLID_201_', strokeDashoffset: [anime.setDashoffset, 0], opacity: [0, 1] })
+		.add({ targets: '#XMLID_202_', strokeDashoffset: [anime.setDashoffset, 0], opacity: [0, 1] });
+
+
+	var svg_3 = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" xml:space="preserve"> <style> #XMLID_220_ rect { fill: white; stroke: black; stroke-width: .4px; } #XMLID_220_ line { stroke: black; } </style> <g xmlns="http://www.w3.org/2000/svg" id="XMLID_220_" style="transform: translateY(-450px);"> <rect id="XMLID_212_" x="117.4" y="574.5" class="st31" width="103" height="22.1" /> <rect id="XMLID_214_" x="136.7" y="562.4" class="st31" width="10.8" height="12.1" /> <rect id="XMLID_213_" x="93.3" y="568" class="st31" width="151.3" height="2.8" /> <rect id="XMLID_215_" x="127" y="574.5" class="st31" width="84.2" height="22.1" /> <rect id="XMLID_217_" x="173.7" y="579.2" class="st31" width="11.7" height="11.3" /> <rect id="XMLID_218_" x="197.9" y="574.5" class="st31" width="13.3" height="22.1" /> <rect id="XMLID_219_" x="84" y="596.6" class="st31" width="173.2" height="12.8" /> </g> </svg>';
+	$("body").append(svg_3)
+	var animation_3 = anime.timeline({ easing: 'linear', duration: 1000, autoplay: true })
+		.add({ targets: '#XMLID_219_', x: [-100, 84] })
+		.add({ targets: '#XMLID_212_', y: [596.6, 574.5], height: [0, 22.1] })
+		.add({ targets: '#XMLID_215_', y: [596.6, 574.5], height: [0, 22.1] })
+		.add({ targets: '#XMLID_214_', y: [574.5, 562.4], height: [0, 12.1] })
+		.add({ targets: '#XMLID_213_', y: [400, 568] })
+		.add({ targets: '#XMLID_218_', strokeDashoffset: [anime.setDashoffset, 0], opacity: [0, 1] })
+		.add({ targets: '#XMLID_217_', strokeDashoffset: [anime.setDashoffset, 0], opacity: [0, 1] });
+
+
+
+	$("body").css({ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' })
+	$("svg").css({ width: '400px' })
+
+</script>
 
 
