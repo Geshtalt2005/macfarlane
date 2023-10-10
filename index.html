@@ -10,6 +10,21 @@
 
 <script>
 
+    var svg11 = '<svg version="1.1" id="Building" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 450 172" style="enable-background:new 0 0 314.5 172;" xml:space="preserve"><style type="text/css">.st380{stroke:#000000;stroke-miterlimit:10;}.st381{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}.st382{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}.st383{font-family:\'MyriadPro-Regular\';}.st384{font-size:6px;}</style><g id="XMLID_383_1_"><polygon id="XMLID_383_2_" class="st380" points="278.25,147.25 278.25,144.75 278.25,141.25 36.5,141.25 36.5,144.75 32.25,144.75 32.25,147.25 20.75,147.25 20.75,149 36.5,149 278.25,149 299.5,149 299.5,147.25   "/><rect id="XMLID_383_3_" x="199.25" y="17.25" class="st381" width="40.25" height="124"/><rect id="XMLID_383_4_" x="62.75" y="76.75" class="st381" width="129" height="64.5"/><rect id="XMLID_383_5_" x="28.5" y="76.75" class="st381" width="170.75" height="37"/><rect id="XMLID_383_6_" x="198" y="17.25" class="st381" width="44" height="96.5"/><rect id="XMLID_383_7_" x="195.25" y="27.875" class="st380" width="2.75" height="19.625"/><rect id="XMLID_383_8_" x="242" y="60.5" class="st380" width="2.875" height="19.445"/><rect id="XMLID_383_9_" x="25.333" y="85.5" class="st380" width="3.167" height="20.167"/><line id="XMLID_383_10_" class="st382" x1="62.75" y1="113.75" x2="62.75" y2="141.25"/><line id="XMLID_383_11_" class="st382" x1="29.25" y1="113.75" x2="29.25" y2="147.25"/><line id="XMLID_383_12_" class="st382" x1="96.5" y1="113.75" x2="96.5" y2="141.25"/><line id="XMLID_383_13_" class="st382" x1="129.375" y1="113.75" x2="129.375" y2="141.25"/><line id="XMLID_383_14_" class="st382" x1="161.125" y1="113.75" x2="161.125" y2="141.25"/><line id="XMLID_383_15_" class="st382" x1="191" y1="113.75" x2="191" y2="141.25"/><text id="XMLID_383_16_" transform="matrix(1 0 0 1 178.5 120.75)" class="st383 st384">139</text> </g> </svg>';
+    $("body").append(svg11)
+
+    var animation_11 = anime.timeline({ easing: 'linear', duration: 700, autoplay: true })
+        .add({ targets: "#XMLID_383_2_", translateX: [-500, 0] })
+        .add({ targets: "#XMLID_383_3_", y: [141.25, 17.25], height: [0, 124] })
+        .add({ targets: "#XMLID_383_4_", y: [141.25, 76.75], height: [0, 64.5] })
+        .add({ targets: "#XMLID_383_5_", translateX: [500, 0] })
+        .add({ targets: ["#XMLID_383_11_", "#XMLID_383_10_", "#XMLID_383_12_", "#XMLID_383_13_", "#XMLID_383_14_", "#XMLID_383_15_"], strokeDashoffset: [anime.setDashoffset, 0] })
+        .add({ targets: "#XMLID_383_6_", translateY: [-500, 0] })
+        .add({ targets: "#XMLID_383_7_", translateX: [-500, 0] })
+        .add({ targets: "#XMLID_383_8_", translateX: [500, 0] })
+        .add({ targets: "#XMLID_383_9_", translateX: [-500, 0] })
+        .add({ targets: "#XMLID_383_16_", opacity: [0, 1] })
+
 
 	var svg10 = '<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 596 262" style="enable-background:new 0 0 384 262;" xml:space="preserve"> <style type="text/css"> .st370 { fill: none; stroke: #000000; stroke-width: 6; stroke-miterlimit: 10; } .st371 { fill: #FFFFFF; stroke: #000000; stroke-miterlimit: 10; } .st372 { opacity: 0.67; fill: #FFFFFF; stroke: #000000; stroke-miterlimit: 10; } .st373 { stroke: #000000; stroke-miterlimit: 10; } </style> <g id="XMLID_3719_"> <g id="XMLID_3718_"> <line id="XMLID_371_" class="st370" x1="18.3" y1="208.3" x2="369" y2="208.3" /> </g> <rect id="XMLID_375_" x="160.3" y="84" class="st371" width="69.3" height="124.3" /> <rect id="XMLID_376_" x="141.3" y="44" class="st372" width="104" height="123" /> <rect id="XMLID_377_" x="211" y="167" class="st373" width="18.7" height="41.3" /> </g> </svg>';
 	$("body").append(svg10)
