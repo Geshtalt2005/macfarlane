@@ -11,6 +11,16 @@
 <script>
 
 
+	var svg10 = '<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 596 262" style="enable-background:new 0 0 384 262;" xml:space="preserve"> <style type="text/css"> .st370 { fill: none; stroke: #000000; stroke-width: 6; stroke-miterlimit: 10; } .st371 { fill: #FFFFFF; stroke: #000000; stroke-miterlimit: 10; } .st372 { opacity: 0.67; fill: #FFFFFF; stroke: #000000; stroke-miterlimit: 10; } .st373 { stroke: #000000; stroke-miterlimit: 10; } </style> <g id="XMLID_3719_"> <g id="XMLID_3718_"> <line id="XMLID_371_" class="st370" x1="18.3" y1="208.3" x2="369" y2="208.3" /> </g> <rect id="XMLID_375_" x="160.3" y="84" class="st371" width="69.3" height="124.3" /> <rect id="XMLID_376_" x="141.3" y="44" class="st372" width="104" height="123" /> <rect id="XMLID_377_" x="211" y="167" class="st373" width="18.7" height="41.3" /> </g> </svg>';
+	$("body").append(svg10)
+
+	var animation_10 = anime.timeline({ easing: 'linear', duration: 1000, autoplay: true })
+		.add({ targets: "#XMLID_371_", translateX: [-500, 0] })
+		.add({ targets: "#XMLID_375_", y: [208.3, 84], height: [0, 124.3] })
+		.add({ targets: "#XMLID_376_", translateY: [-500, 0] })
+		.add({ targets: "#XMLID_377_", x: [229, 211], width: [0, 18.7] })
+
+
 	var svg9 = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 596 178" style="enable-background:new 0 0 496 178;" xml:space="preserve"> <style type="text/css"> .st0{fill:none;stroke:#000000;stroke-miterlimit:10;} .st91{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;} .st2{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;} .st3{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;} </style> <g id="Layer_2"> <g id="XMLID_36_15_"> <line id="XMLID_36_2_" class="st0" x1="46.2" y1="166.7" x2="0" y2="166.7"/> <rect id="XMLID_36_4_" x="30.6" y="166.7" width="15.6" height="5.4"/> <rect id="XMLID_36_5_" x="40.7" y="172.1" width="325.3" height="5.9"/> <rect id="XMLID_36_6_" x="135.6" y="0.5" class="st0" width="82.2" height="171.6"/> <rect id="XMLID_36_3_" x="55.2" y="112.1" class="st0" width="80.4" height="60"/> <rect id="XMLID_36_7_" x="217.8" y="113.9" class="st0" width="137.1" height="58.2"/> <rect id="XMLID_36_8_" x="132.5" y="11" class="st91" width="88.5" height="101.1"/> <g id="XMLID_36_10_"> <line id="XMLID_36_9_" class="st2" x1="138.2" y1="172.1" x2="138.2" y2="112.1"/> <line id="XMLID_36_11_" class="st2" x1="157.5" y1="172.1" x2="157.5" y2="112.1"/> <line id="XMLID_36_12_" class="st2" x1="176.7" y1="172.1" x2="176.7" y2="112.1"/> <line id="XMLID_36_13_" class="st2" x1="196" y1="172.1" x2="196" y2="112.1"/> <line id="XMLID_36_14_" class="st2" x1="215.2" y1="172.1" x2="215.2" y2="112.1"/> </g> </g> </g> </svg>';
 	$("body").append(svg9)
 
