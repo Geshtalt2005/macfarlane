@@ -11,18 +11,20 @@
     $("body").append(svg13)
 
     var duration_13 = 600;
+    var duration_13_1_2 = duration_13 / 2;
     var atTheSameTime_13 = `-=${duration_13}`;
     var atHalfTimeTime_13 = `-=${duration_13 / 2}`;
+    var afterHalfTimeTime_13 = `+=${duration_13 / 2}`;
     var animation_13 = anime.timeline({ easing: 'linear', duration: duration_13, autoplay: true })
         .add({ targets: "#XMLID_405_1_", strokeDashoffset: [anime.setDashoffset, 0] })
         .add({ targets: "#XMLID_405_8_", x1: [230.667, 100.667]})
-        .add({ targets: "#XMLID_405_6_", strokeDashoffset: [anime.setDashoffset, 0] })
-        .add({ targets: "#XMLID_405_5_", strokeDashoffset: [anime.setDashoffset, 0] }, atHalfTimeTime_13)
-        .add({ targets: "#XMLID_405_4_", strokeDashoffset: [anime.setDashoffset, 0] }, atHalfTimeTime_13)
-        .add({ targets: "#XMLID_405_3_", strokeDashoffset: [anime.setDashoffset, 0] }, atHalfTimeTime_13)
-        .add({ targets: "#XMLID_405_2_", strokeDashoffset: [anime.setDashoffset, 0] }, atHalfTimeTime_13)
-        .add({ targets: "#XMLID_405_9_", y: [291.042, 281.333], height: [0, 9.708] })
-        .add({ targets: "#XMLID_405_98_", points: "316,162.667 315.333,146 145.333,169.333 145.333,187.333 145.333,281.333 468,281.525 468,221.333" })
+        .add({ targets: "#XMLID_405_6_", strokeDashoffset: [anime.setDashoffset, 0], duration: duration_13_1_2 }, afterHalfTimeTime_13)
+        .add({ targets: "#XMLID_405_5_", strokeDashoffset: [anime.setDashoffset, 0], duration: duration_13_1_2 })
+        .add({ targets: "#XMLID_405_4_", strokeDashoffset: [anime.setDashoffset, 0], duration: duration_13_1_2 })
+        .add({ targets: "#XMLID_405_3_", strokeDashoffset: [anime.setDashoffset, 0], duration: duration_13_1_2 })
+        .add({ targets: "#XMLID_405_2_", strokeDashoffset: [anime.setDashoffset, 0], duration: duration_13 * 1.5 })
+        .add({ targets: "#XMLID_405_9_", y: [291.042, 281.333], height: [0, 9.708] }, afterHalfTimeTime_13)
+        .add({ targets: "#XMLID_405_98_", opacity: [0, 1], points: "316,162.667 315.333,146 145.333,169.333 145.333,187.333 145.333,281.333 468,281.525 468,221.333" })
         .add({ targets: "#XMLID_405_15_", x2: [145.333, 338.167], y2: [169.333, 142]})
         .add({ targets: "#XMLID_405_11_", y: [281.333, 96], height: [0, 185.333] })
         .add({ targets: "#XMLID_405_13_", translateX: [-500, 0] })
@@ -33,8 +35,8 @@
         .add({ targets: "#XMLID_405_59_", translateX: [-500, 0] })
         .add({ targets: "#XMLID_405_60_", translateX: [-500, 0] }, atTheSameTime_13)
         .add({ targets: "#XMLID_405_61_", translateY: [-500, 0] })
-        .add({ targets: ["#XMLID_405_63_", "#XMLID_405_64_", "#XMLID_405_66_", "#XMLID_405_65_", "#XMLID_405_70_", "#XMLID_405_69_", "#XMLID_405_68_", "#XMLID_405_74_", "#XMLID_405_67_", "#XMLID_405_73_", "#XMLID_405_72_", "#XMLID_405_71_", "#XMLID_405_78_", "#XMLID_405_77_", "#XMLID_405_76_", "#XMLID_405_75_", "#XMLID_405_82_", "#XMLID_405_81_", "#XMLID_405_80_"], strokeDashoffset: [anime.setDashoffset, 0] })
-        .add({ targets: "#XMLID_405_84_", rx: [0, 18], ry: [0, 18] })
+        .add({ targets: ["#XMLID_405_63_", "#XMLID_405_64_", "#XMLID_405_66_", "#XMLID_405_65_", "#XMLID_405_70_", "#XMLID_405_69_", "#XMLID_405_68_", "#XMLID_405_74_", "#XMLID_405_67_", "#XMLID_405_73_", "#XMLID_405_72_", "#XMLID_405_71_", "#XMLID_405_78_", "#XMLID_405_77_", "#XMLID_405_76_", "#XMLID_405_75_", "#XMLID_405_82_", "#XMLID_405_81_", "#XMLID_405_80_"], strokeDashoffset: [anime.setDashoffset, 0] }, afterHalfTimeTime_13)
+        .add({ targets: "#XMLID_405_84_", rx: [0, 18], ry: [0, 18], duration: duration_13_1_2 }, afterHalfTimeTime_13)
         .add({ targets: "#XMLID_405_10_", strokeDashoffset: [anime.setDashoffset, 0] })
         .add({ targets: "#XMLID_405_7_", strokeDashoffset: [anime.setDashoffset, 0] }, atHalfTimeTime_13)
         .add({ targets: "#XMLID_405_12_", strokeDashoffset: [anime.setDashoffset, 0] }, atHalfTimeTime_13)
@@ -42,11 +44,11 @@
         .add({ targets: "#XMLID_405_83_", strokeDashoffset: [anime.setDashoffset, 0] }, atHalfTimeTime_13)
         .add({ targets: "#XMLID_405_85_", strokeDashoffset: [anime.setDashoffset, 0] }, atHalfTimeTime_13)
         .add({ targets: "#XMLID_405_86_", strokeDashoffset: [anime.setDashoffset, 0] }, atHalfTimeTime_13)
-        .add({ targets: "#XMLID_405_79_", rx: [0, 15], ry: [0, 15] })
-        .add({ targets: ["#XMLID_405_96_", "#XMLID_405_97_"], opacity: [0, 1] })
+        .add({ targets: "#XMLID_405_79_", rx: [0, 15], ry: [0, 15] }, afterHalfTimeTime_13)
+        .add({ targets: ["#XMLID_405_96_", "#XMLID_405_97_"], opacity: [0, 1] }, afterHalfTimeTime_13)
 
 
-    var svg12 = '<svg version="1.1" id="Picture" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 500 190.49" style="enable-background:new 0 0 421.479 190.49;" xml:space="preserve"> <style type="text/css"> .st390{stroke:#000000;stroke-miterlimit:10;} .st391{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;} .st392{fill:none;stroke:#000000;stroke-miterlimit:10;} .st393{stroke:#000000;stroke-width:3;stroke-miterlimit:10;} .st394{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3.0153,3.0153;} .st395{stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3;} .st396{font-family:\'MyriadPro-Regular\';} .st397{font-size:6px;} .st398{stroke:#000000;stroke-width:2;stroke-miterlimit:10;} </style> <rect id="XMLID_394_1_" x="269.398" y="51.398" class="st390" width="4.334" height="117.666"/> <rect id="XMLID_394_2_" x="123.398" y="73.732" class="st390" width="37.667" height="94.666"/> <polygon id="XMLID_394_3_" class="st0" points="123.398,109.542 123.398,109.542 294.264,75.205 294.264,75.205"/> <rect id="XMLID_394_4_" x="265.065" y="86.731" class="st390" width="42" height="82.334"/> <polygon id="XMLID_394_5_" class="st390" points="42.398,169.065 42.398,169.065 301.398,169.065 301.398,169.065"/> <polygon id="XMLID_394_6_" class="st390" points="307.065,147.398 367.065,147.398 307.065,147.398 "/> <rect id="XMLID_394_7_" x="175.065" y="144.065" class="st391" width="118" height="15"/> <rect id="XMLID_394_8_" x="151.065" y="129.398" class="st391" width="59.974" height="39.667"/> <rect id="XMLID_394_9_" x="151.065" y="129.398" class="st391" width="24" height="39.667"/> <line id="XMLID_394_10_" class="st392" x1="161.065" y1="168.398" x2="161.065" y2="129.398"/> <rect id="XMLID_394_11_" x="17.4" y="147.398" class="st391" width="143.665" height="21.667"/> <rect id="XMLID_394_12_" x="301.398" y="148.065" class="st391" width="103.28" height="21"/> <line id="XMLID_394_13_" class="st393" x1="122" y1="112" x2="107" y2="90"/><line id="XMLID_394_19_" class="st394" x1="252.704" y1="19.462" x2="218.748" y2="164.803"/><line id="XMLID_394_21_" class="st393" x1="309.451" y1="48.398" x2="299.064" y2="75.862"/> <line id="XMLID_394_22_" class="st393" x1="274.731" y1="128.398" x2="258.398" y2="169.065"/> <line id="XMLID_394_23_" class="st395" x1="319.064" y1="26.732" x2="258.398" y2="167.732"/> <text id="XMLID_394_24_" transform="matrix(1 0 0 1 249.3989 151.5649)" class="st396 st397">360</text> <polygon id="XMLID_394_25_" class="st391" points="301.398,75.398 301.398,75.398 301.398,75.398 301.398,169.065 301.398,169.065 301.398,169.065 301.398,169.065 301.398,75.398 "/> <line id="XMLID_394_26_" class="st398" x1="38.581" y1="128.122" x2="301.398" y2="74.398"/> <polygon id="XMLID_394_27_" class="st391" points="317.398,46.398 101.731,89.065 101.731,91.732 317.398,48.398 "/> <line id="XMLID_394_28_" class="st398" x1="17.4" y1="168.398" x2="404.678" y2="168.398"/> </svg>';
+    var svg12 = '<svg version="1.1" id="Picture" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 500 190.49" style="enable-background:new 0 0 421.479 190.49;" xml:space="preserve"> <style type="text/css"> .st390{stroke:#000000;stroke-miterlimit:10;} .st391{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;} .st392{fill:none;stroke:#000000;stroke-miterlimit:10;} .st393{stroke:#000000;stroke-width:3;stroke-miterlimit:10;} .st394{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3.0153,3.0153;} .st395{stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3;} .st396{font-family:\'MyriadPro-Regular\';} .st397{font-size:6px;} .st398{stroke:#000000;stroke-width:2;stroke-miterlimit:10;} </style> <rect id="XMLID_394_1_" x="269.398" y="51.398" class="st390" width="4.334" height="117.666"/> <rect id="XMLID_394_2_" x="123.398" y="73.732" class="st390" width="37.667" height="94.666"/> <polygon id="XMLID_394_3_" class="st0" points="123.398,109.542 123.398,109.542 294.264,75.205 294.264,75.205"/> <rect id="XMLID_394_4_" x="265.065" y="86.731" class="st390" width="42" height="82.334"/> <polygon id="XMLID_394_5_" class="st390" points="42.398,169.065 42.398,169.065 301.398,169.065 301.398,169.065"/> <polygon id="XMLID_394_6_" class="st390" points="307.065,147.398 367.065,147.398 307.065,147.398 "/> <rect id="XMLID_394_7_" x="175.065" y="144.065" class="st391" width="118" height="15"/> <rect id="XMLID_394_8_" x="151.065" y="129.398" class="st391" width="59.974" height="39.667"/> <rect id="XMLID_394_9_" x="151.065" y="129.398" class="st391" width="24" height="39.667"/> <line id="XMLID_394_10_" class="st392" x1="161.065" y1="168.398" x2="161.065" y2="129.398"/> <rect id="XMLID_394_11_" x="17.4" y="147.398" class="st391" width="143.665" height="21.667"/> <rect id="XMLID_394_12_" x="301.398" y="148.065" class="st391" width="103.28" height="21"/> <line id="XMLID_394_13_" class="st393" x1="122" y1="112" x2="107" y2="90"/><line id="XMLID_394_19_" class="st394" x1="252.704" y1="19.462" x2="218.748" y2="164.803"/><line id="XMLID_394_21_" class="st393" x1="309.451" y1="48.398" x2="299.064" y2="75.862"/> <line id="XMLID_394_22_" class="st393" x1="274.731" y1="128.398" x2="258.398" y2="169.065"/> <line id="XMLID_394_23_" class="st395" x1="319.064" y1="26.732" x2="258.398" y2="167.732"/> <text id="XMLID_394_24_" transform="matrix(1 0 0 1 249.3989 151.5649)" class="st396 st397">360</text> <polygon id="XMLID_394_25_" class="st391" points="301.398,112.398 301.398,129.398 301.398,129.398 301.398,159.065 301.398,159.065 301.398,169.065 301.398,169.065 301.398,75.398"/> <line id="XMLID_394_26_" class="st398" x1="38.581" y1="128.122" x2="301.398" y2="74.398"/> <polygon id="XMLID_394_27_" class="st391" points="317.398,46.398 101.731,89.065 101.731,91.732 317.398,48.398 "/> <line id="XMLID_394_28_" class="st398" x1="17.4" y1="168.398" x2="404.678" y2="168.398"/> </svg>';
     $("body").append(svg12)
 
     var duration_12 = 600;
@@ -69,7 +71,7 @@
         .add({ targets: "#XMLID_394_13_", x2: [122, 107], y2: [112, 90]}, atTheSameTime_12)
         .add({ targets: "#XMLID_394_27_", opacity: [0, 1]})
         .add({ targets: "#XMLID_394_1_", y: [169.064, 51.398], height: [0, 117.666] }, atTheSameTime_12)
-        .add({ targets: "#XMLID_394_19_", x1: [218.748, 252.704], y1: [164.803, 19.462]}, atTheSameTime_12)
+        .add({ targets: "#XMLID_394_19_", x1: [218.748, 252.704], y1: [164.803, 19.462]})
         .add({ targets: "#XMLID_394_23_", x1: [258.398, 319.064], y1: [167.732, 26.732]}, atTheSameTime_12)
         .add({ targets: "#XMLID_394_22_", x1: [258.398, 274.731], y1: [169.065, 128.398]})
         .add({ targets: "#XMLID_394_21_", x1: [299.064, 309.451], y1: [75.862, 48.398]})
